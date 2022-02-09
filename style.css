@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1rem;
+}
+
+section {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+}
+
+.heart {
+  height: 230px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 150px 150px 0 0;
+  rotate: 45deg;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  position: relative;
+  left: -75px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-box-shadow: inset 2px 2px 5px black;
+          box-shadow: inset 2px 2px 5px black;
+}
+
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 230px;
+  width: 150px;
+  background-color: #fff;
+  border-radius: 150px 150px 0 0;
+  rotate: -90deg;
+  left: 70px;
+  top: -75px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-box-shadow: inset 1px -140px 5px white, inset -3px 3px 5px black;
+          box-shadow: inset 1px -140px 5px white, inset -3px 3px 5px black;
+}
+/*# sourceMappingURL=style.css.map */
