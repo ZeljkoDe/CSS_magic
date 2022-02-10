@@ -1,0 +1,28 @@
+.heart {
+	height: 230px;
+	width: 150px;
+	background-color: #fff;
+	border-radius: 150px 150px 0 0;
+	rotate: 45deg;
+	transform-origin: bottom;
+	position: relative;
+	left: -75px;
+	transform: scale(1.4);
+
+	box-shadow: inset 2px 2px 5px black;
+
+	&::before {
+		content: "";
+		position: absolute;
+		height: 230px;
+		width: 150px;
+		background-color: #fff;
+		border-radius: 150px 150px 0 0;
+		rotate: -90deg;
+		left: 70px;
+		top: -75px;
+		transform-origin: bottom;
+
+		box-shadow: inset 1px -140px 5px white, inset -3px 3px 5px black;
+	}
+}
